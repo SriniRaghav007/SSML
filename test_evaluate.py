@@ -57,7 +57,7 @@ def read(rdd):
 		message_col = messages[:,1]
 		spam_col = messages[:,2]
 
-		testing_set = vectorizer.fit_transform(message_col)
+		testing_set = vectorizer.transform(message_col)
 		#print(training_set)
 		testing_res = np.array(spam_col)
 
